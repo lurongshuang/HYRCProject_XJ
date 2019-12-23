@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">新疆搭建</string>
+
+    <string name="titleSma">标题名称</string>
+    <!--font-->
+    <string name="iconfanhui">&#xe614;</string>
+    <string name="iconicon_search">&#xeb9c;</string>
+    <string name="iconjinru">&#xe608;</string>
+    <string name="iconshouqijiantou">&#xe66f;</string>
+    <string name="iconguanbi">&#xe611;</string>
+    <!--font-->
+
+    <!--permission-->
+    <string name="perTitle">获取权限失败</string>
+    <string name="perText">点击允许才可以使用应用功能</string>
+    <!--permission-->
+
+    <!--tab-->
+    <string name="tab1">信用动态</string>
+    <string name="tab2">信息查询</string>
+    <string name="tab3">考勤工作</string>
+    <string name="tab4">用户中心</string>
+    <string name="tab5">考勤签到</string>
+    <!--tab-->
+
+    <!--Toast-->
+    <string name="toastError">参数异常</string>
+    <string name="toastNoMorData">没有更多数据</string>
+    <string name="toastWarSearText">请输入搜索内容</string>
+    <!--Toast-->
+
+    <!--other-->
+    <string name="change_header">更换头像</string>
+    <string name="save_pic_succes">保存成功</string>
+    <string name="changeUser">切换账号</string>
+    <string name="changeMessage">确定要退出当前账户？</string>
+    <string name="exitTitle">退出程序</string>
+    <string name="exitMessage">确定要退出程序？</string>
+    <string name="exitNegative">取消</string>
+    <string name="exitPositive">确认</string>
+    <string name="emphasize">*</string>
+    <!--other-->
+</resources>

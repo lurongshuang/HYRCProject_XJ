@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listBgCol"
+        android:orientation="vertical"
+        tools:context="com.hyrc99.projectByL.activity.userCenter.informationModification.ChangeUserActivity">
+
+    <include layout="@layout/include_toolbar_layout_text" />
+
+    <LinearLayout
+            android:id="@+id/lluser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+        <EditText
+                android:id="@+id/ettext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="@dimen/dp_10"
+                android:textSize="@dimen/sp_13" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llsex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:id="@+id/rlusernc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@color/white"
+                android:padding="@dimen/dp_10">
+
+            <TextView
+                    style="@style/item_usercenterInfor"
+                    android:text="男" />
+
+            <RadioButton
+                    style="@style/item_usercenterfanhui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@color/white"
+                android:padding="@dimen/dp_10">
+
+            <TextView
+                    style="@style/item_usercenterInfor"
+                    android:text="女" />
+
+            <RadioButton
+                    style="@style/item_usercenterfanhui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selectPersonType">
+        <item>总监</item>
+        <item>监理工程师</item>
+        <item>监理员</item>
+        <item>造价工程师师</item>
+        <item>质量检测员</item>
+        <item>建造师</item>
+        <item>安全工程师</item>
+        <item>造价员</item>
+        <item>五大员</item>
+        <item>三类人员</item>
+        <item>其它执业人员</item>
+    </string-array>
+    <string-array name="chinese_week_string_array">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+</resources>

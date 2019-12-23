@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1890FF</color>
+    <color name="colorPrimaryDark">#1890FF</color>
+    <color name="colorAccent">#1890FF</color>
+    
+    <color name="primaryShallow">#75b9f8</color>
+    <color name="primaryTips">#b8b8b8</color>
+    <color name="siginInColor">#093067</color>
+    <color name="siginInTimeColor">#657da1</color>
+    <color name="singinListColor">#7ea8f2</color>
+    <color name="singinListLigtColor">#9cbcf5</color>
+    <color name="singinLeaveColor">#938df1</color>
+    <color name="singinLeaveLigtColor">#aba7f1</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_63_percent">#a0000000</color>
+    <color name="no_color">#00000000</color>
+    <color name="color_001c58_63_percent">#a0001c58</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_399bfc">#399bfc</color>
+    <color name="color_e10816">#f1f70425</color>
+    <color name="color_red">#ff3604</color>
+    <color name="color_fc9b9c">#fc9b9c</color>
+    <color name="color_55d4dc">#55d4dc</color>
+    <color name="color_f06767">#f06767</color>
+    <color name="color_0f6ab4">#0f6ab4</color>
+    <color name="bed_man">#3399ff</color>
+    <color name="bed_woman">#ff9999</color>
+    <color name="bed_null">#4fd4dc</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_dbe4eb">#dbe4eb</color>
+    <color name="color_ff999a">#ff999a</color>
+    <color name="color_3399FD">#3399FF</color>
+    <color name="color_gray">#989898</color>
+    <color name="color_black_gray">#454444</color>
+    <color name="color_FF7249">#FF7249</color>
+    <color name="color_green">#13c600</color>
+    <color name="color_late">#B7AD08</color>
+    <color name="color_leave">#FF8A00</color>
+    <color name="color_absent">#FE030F</color>
+    <color name="login_hint_color">#999999</color>
+    <color name="login_user_color">#636363</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="title_yellow_app">#ff7258</color>
+    <color name="background_manage">#f0eff4</color>
+    <color name="title_theme">#ed5736</color>
+    <color name="title_theme_waterStand">#00a8fe</color>
+    <!-- QRCode scanner color begin -->
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#0F0</color>
+    <color name="corner_color">#00FF00</color>
+    <color name="list_news_item">#626262</color>
+    <color name="edu_comment_color">#87888c</color>
+    <color name="edu_text_more_color">#949494</color>
+    <color name="edu_text_clear_record_color">#e1dfdf</color>
+    <color name="login_editTextView_color">#cecdcd</color>
+    <color name="login_btnCode_color">#efad4d</color>
+    <color name="splash_animal_jump">#CC87888c</color>
+    <color name="unitSearch_View_color">#e4e4e4</color>
+    <color name="view_line_color">#ebebeb</color>
+    <color name="moniGrade_resolution_color">#FDBF01</color>
+
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+    <color name="split_line">#11112233</color>
+    //pieChart-color
+    <color name="pieChart_01">#F05096</color>
+    <color name="pieChart_02">#A2CE3A</color>
+    <color name="pieChart_03">#5CD6BF</color>
+    <color name="pieChart_04">#0194E4</color>
+    <color name="pieChart_05">#ff7258</color>
+    //search
+    <color name="search_bg">#fbfbfb</color>
+    <color name="search_bg_stroke">#dfdede</color>
+    <color name="search_item_textColor">#404048</color>
+    <color name="send_code_color">#d1cfcf</color>
+    <color name="local_item_basic">#FFF6E6</color>
+    <color name="local_item_evaluate">#E6EFFD</color>
+    <color name="guide_btn">#9D80FE</color>
+    <color name="progress_color">#57A8FB</color>
+    <color name="me_header_bg">#D2CCCC</color>
+    <color name="me_header_personInfo">#a7a7a7</color>
+    <color name="me_header_shadow">#dfdddd</color>//阴影
+    <color name="a1a1a1">#a1a1a1</color>
+    <color name="transparent_half">#80000000</color>
+    <color name="numbg">#f7f7f7</color>
+    <color name="numbglin">#e8e8e8</color>
+    <color name="divider">#ffd2d2d2</color>
+    <color name="nowbuy">#ffaa07</color>
+    <color name="fontColor">#191919</color>
+    <color name="TitleColor">#FFFFFF</color>
+    <color name="translucent">#33000000</color>
+    <color name="picture_tab_color_false">#9b9b9b</color>
+    <color name="list_lins">#ece8e9</color>
+
+    <color name="color_aaaaa">#008CD7</color>
+    <!-- 考勤位置 color -->
+    <color name="checkPositionSetting_color">#def7fd</color>
+    <color name="legalProject_color">#fdebe6</color>
+    <color name="checkRecord_color">#eeebfe</color>
+    <color name="logo_bg">#f2f2f2</color>
+    <color name="color_939393">#939393</color>
+    <color name="color_ff9b25">#ff9b25</color>
+    <color name="listBgCol">#f1f1f1</color>
+    <color name="listTitleColor">#383838</color>
+    <color name="emphasize">#fe0000</color>
+</resources>

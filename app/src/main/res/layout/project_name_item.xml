@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_0_5"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tvPrjnm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="辽宁桌椅设备知道邮箱功能"
+                android:textColor="@color/listTitleColor"
+                android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_5">
+
+        <TextView
+                android:id="@+id/tvJtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="类别：勘察"
+                android:textColor="@color/login_hint_color"
+                android:textSize="@dimen/sp_14" />
+
+        <TextView
+                android:id="@+id/tvStext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="类别：勘察"
+                android:textColor="@color/login_hint_color"
+                android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+    <!--    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="@dimen/dp_5"-->
+    <!--            app:sLeftBottomTextColor="@color/login_hint_color"-->
+    <!--            app:sLeftBottomTextSize="@dimen/sp_14"-->
+    <!--            app:sLeftBottomTextString="类别：勘察"-->
+    <!--            app:sLeftTextColor="@color/listTitleColor"-->
+    <!--            app:sLeftTextSize="@dimen/sp_16"-->
+    <!--            app:sLeftTextString="辽宁桌椅设备知道邮箱功能"-->
+    <!--            app:sRightBottomTextColor="@color/login_hint_color"-->
+    <!--            app:sRightBottomTextSize="@dimen/sp_14"-->
+    <!--            app:sRightBottomTextString="状态：签约已实施"-->
+    <!--            app:sRightTextString=" "-->
+    <!--            app:sCenterBottomTextString="  "-->
+    <!--            app:sLeftTopTextString=" "-->
+    <!--            />-->
+</LinearLayout>

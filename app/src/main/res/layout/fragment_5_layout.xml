@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listBgCol"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_110"
+            android:background="@color/colorPrimary">
+
+        <ImageView
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/js_images_salary_cloud_small" />
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/js_images_salary_cloud" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_15">
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60"
+                    android:clickable="true"
+                    android:focusable="true">
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                        android:id="@+id/ivriimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/imag_splash"
+                        app:riv_border_color="@color/white"
+                        app:riv_border_width="@dimen/dp_2"
+                        app:riv_is_oval="true" />
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/lltvUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_15">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="卢融霜"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_23"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:text="北京科技科技科技有限公司"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_14" />
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+            android:id="@+id/llhelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+        <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/js_images_my_icon_my_help" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:text="帮助中心"
+                android:textColor="@color/fontColor"
+                android:textSize="@dimen/sp_13" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+
+            <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/iconjinru" />
+        </LinearLayout>
+    </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+            android:id="@+id/llcallback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+        <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/js_images_myorder" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:text="意见反馈"
+                android:textColor="@color/fontColor"
+                android:textSize="@dimen/sp_13" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+
+            <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/iconjinru" />
+        </LinearLayout>
+    </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+            android:id="@+id/llabout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+        <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/js_images_my_icon_my_we" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:text="关于我们"
+                android:textColor="@color/fontColor"
+                android:textSize="@dimen/sp_13" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+
+            <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/iconjinru" />
+        </LinearLayout>
+    </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+            android:id="@+id/llseting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+        <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/js_images_my_icon_my_web" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:text="设置"
+                android:textColor="@color/fontColor"
+                android:textSize="@dimen/sp_13" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right">
+
+            <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/iconjinru" />
+        </LinearLayout>
+    </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+</LinearLayout>

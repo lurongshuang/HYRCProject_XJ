@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/admin_project"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10">
+
+        <LinearLayout
+                android:id="@+id/ll_admin_query_project"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_60"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_type_2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="@dimen/dp_36"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:src="@drawable/ic_admin_query" />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="管理机构项目"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_13" />
+
+
+        </LinearLayout>
+
+        <!--        <View-->
+        <!--                android:layout_marginTop="@dimen/dp_5"-->
+        <!--                android:layout_marginBottom="@dimen/dp_5"-->
+        <!--                android:layout_width="@dimen/dp_2"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:background="@color/white" />-->
+
+        <LinearLayout
+                android:id="@+id/ll_admin_record"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_60"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_type_3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="@dimen/dp_36"
+                    android:layout_height="@dimen/dp_36"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:src="@drawable/ic_record" />
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="考勤记录"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp_13" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/listBgCol" />
+</LinearLayout>

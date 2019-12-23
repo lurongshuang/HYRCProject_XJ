@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listBgCol"
+        android:orientation="vertical"
+        tools:context="com.hyrc99.projectByL.activity.userCenter.setUp.SetUpActivity">
+
+    <include layout="@layout/include_toolbar_layout_text" />
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+            android:id="@+id/rlupPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dp_10">
+
+        <TextView
+                style="@style/item_usercenterInfor"
+                android:text="修改密码" />
+
+
+        <ImageView style="@style/item_usercenterfanhui" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+            android:id="@+id/rlclearData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dp_10">
+
+        <TextView
+                style="@style/item_usercenterInfor"
+                android:text="清理缓存" />
+
+        <TextView
+                android:id="@+id/tvClearData"
+                style="@style/item_usercenter_name"
+                android:text="5.6MB" />
+
+        <ImageView style="@style/item_usercenterfanhui" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+            android:id="@+id/rlchangeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dp_10">
+
+        <TextView
+                style="@style/item_usercenterInfor"
+                android:text="切换账号" />
+
+
+        <ImageView style="@style/item_usercenterfanhui" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+            android:id="@+id/rlOver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dp_10">
+
+        <TextView
+                style="@style/item_usercenterInfor"
+                android:text="退出程序" />
+
+
+        <ImageView style="@style/item_usercenterfanhui" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+</LinearLayout>

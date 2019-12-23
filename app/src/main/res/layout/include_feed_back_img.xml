@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/dp_75"
+        android:layout_height="@dimen/dp_75"
+        android:background="@drawable/border_img"
+        android:gravity="center">
+
+    <RelativeLayout
+            android:id="@+id/rlimgadd"
+            android:layout_width="@dimen/dp_75"
+            android:layout_height="@dimen/dp_75"
+            android:background="@color/listBgCol"
+            android:gravity="center">
+
+        <ImageView
+                android:id="@+id/ivimage"
+                android:layout_width="@dimen/dp_75"
+                android:layout_height="@dimen/dp_75"
+                android:layout_centerInParent="true"
+                android:src="@drawable/js_images_add_img" />
+
+        <com.hyrc99.projectByL.utils.view.FontIconView
+                android:id="@+id/ivdelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:scaleType="fitXY"
+                android:text="@string/iconguanbi"
+                android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+</RelativeLayout>

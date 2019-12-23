@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_0_5"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/tvUnitName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="辽宁桌椅设备知道邮箱功能"
+                android:textColor="@color/listTitleColor"
+                android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_5">
+
+        <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="评价年度：2017"
+                android:textColor="@color/login_hint_color"
+                android:textSize="@dimen/sp_14" />
+
+        <TextView
+                android:id="@+id/tvJstext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="类别：勘察"
+                android:textColor="@color/login_hint_color"
+                android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_5">
+
+        <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="结果：AAA"
+                android:textColor="@color/login_hint_color"
+                android:textSize="@dimen/sp_14" />
+
+        <TextView
+                android:id="@+id/tvVtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="有效期：2020-12-05"
+                android:textColor="@color/login_hint_color"
+                android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/dp_10">
+
+    <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_5">
+
+        <TextView
+                style="@style/item_title_bg"
+                android:text="功能列表" />
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:background="@color/listBgCol" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dp_5">
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llworkQJ"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/js_images_addleavemanager_leave" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="请假" />
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llworkBK"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/iv_item01_jianli"
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/js_images_addleavemanager_patchcard" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="补卡" />
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llworkJB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/iv_item05_achieve"
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/js_images_addleavemanager_overwork" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="加班" />
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llworkYGWC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/iv_item02_person2"
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/js_images_ic_chat_message_out_work" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="因公外出" />
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llworkCC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/iv_item03_project"
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/icon_chat_business_trip" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="出差" />
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llworkHYS"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/iv_item04_evaluate"
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/js_images_addleavemanager_meetingroom" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="会议室" />
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llworkYC"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/iv_item02_person"
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/js_images_addleavemanager_usecar" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="用车" />
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llworkTY"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/iv_item01_company1"
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/ic_chat_message_others" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="通用" />
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llworkRB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/iv_item10_achieve"
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/js_images_report_icon_daily" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="日报" />
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llwrokZB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/iv_item11_misconduct"
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/js_images_report_icon_weekly" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="周报" />
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llworkYB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/iv_item12_misconduct"
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/js_images_report_icon_monthly" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="月报" />
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout
+                    android:id="@+id/llworkBQHZ"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                        android:id="@+id/iv_item09_evaluate"
+                        style="@style/item_imageView_margin"
+                        android:src="@drawable/icon_chat_huanban" />
+
+                <TextView
+                        style="@style/item_textView_margin"
+                        android:text="便签/合作" />
+
+            </com.xuexiang.xui.widget.alpha.XUIAlphaLinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

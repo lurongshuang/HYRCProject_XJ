@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listBgCol"
+        android:orientation="vertical"
+        tools:context="com.hyrc99.projectByL.activity.work.leave.LeaveActivity">
+
+    <include layout="@layout/include_toolbar_layout_text" />
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@color/listBgCol"
+            android:orientation="vertical"
+            tools:context="com.hyrc99.projectByL.activity.work.leave.LeaveActivity">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+                    android:id="@+id/llaveType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_1"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/dp_10">
+
+                <TextView style="@style/emphasize" />
+
+                <TextView
+                        style="@style/item_usercenterInfor"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="请假类型" />
+
+                <TextView
+                        android:id="@+id/tvavetyoe"
+                        style="@style/item_usercenter_name" />
+
+                <ImageView style="@style/item_usercenterfanhui" />
+            </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+                    android:id="@+id/llaveBgTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/dp_10">
+
+                <TextView style="@style/emphasize" />
+
+                <TextView
+                        style="@style/item_usercenterInfor"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="开始时间" />
+
+                <TextView
+                        android:id="@+id/tvbgTiem"
+                        style="@style/item_usercenter_name" />
+
+                <ImageView style="@style/item_usercenterfanhui" />
+            </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+                    android:id="@+id/llevaEndTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_1"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/dp_10">
+
+                <TextView style="@style/emphasize" />
+
+                <TextView
+                        style="@style/item_usercenterInfor"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="结束时间" />
+
+                <TextView
+                        android:id="@+id/tvaveEndTime"
+                        style="@style/item_usercenter_name" />
+
+                <ImageView style="@style/item_usercenterfanhui" />
+            </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                    <TextView style="@style/emphasize" />
+
+                    <TextView
+                            style="@style/item_usercenterInfor"
+                            android:text="请假事由" />
+
+                    <TextView style="@style/item_usercenter_name" />
+                </LinearLayout>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="请输入请假事由"
+                        android:inputType="textMultiLine"
+                        android:lineHeight="@dimen/dp_16"
+                        android:minHeight="@dimen/dp_100"
+                        android:textColor="@color/fontColor"
+                        android:textSize="@dimen/sp_13" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                <TextView
+                        style="@style/item_usercenterInfor"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="图片" />
+
+                <GridLayout
+                        android:id="@+id/rlimages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:columnCount="4"
+                        android:padding="@dimen/dp_5">
+
+                    <include layout="@layout/include_feed_back_img" />
+                </GridLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                    <TextView style="@style/emphasize" />
+
+                    <TextView
+                            style="@style/item_usercenterInfor"
+                            android:text="审批人" />
+
+                    <TextView style="@style/item_usercenter_name" />
+                </LinearLayout>
+
+                <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:columnCount="4"
+                        android:padding="@dimen/dp_5">
+
+                    <include layout="@layout/include_feed_back_img" />
+                </GridLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+
+                    <TextView
+                            style="@style/item_usercenterInfor"
+                            android:text="抄送人" />
+
+                    <TextView style="@style/item_usercenter_name" />
+                </LinearLayout>
+
+                <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:columnCount="4"
+                        android:padding="@dimen/dp_5">
+
+                    <include layout="@layout/include_feed_back_img" />
+                </GridLayout>
+            </LinearLayout>
+
+            <com.xuexiang.xui.widget.alpha.XUIAlphaButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_41"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:background="@drawable/shape_btn_login"
+                    android:text="提交"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

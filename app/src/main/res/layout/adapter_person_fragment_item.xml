@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_5">
+
+        <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王明"
+                android:textColor="@color/listTitleColor"
+                android:textSize="@dimen/sp_15"
+                android:textStyle="bold" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="类别："
+                    android:textColor="@color/transparent_half"
+                    android:textSize="@dimen/sp_15" />
+
+            <TextView
+                    android:id="@+id/tvjtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="总监"
+                    android:textColor="@color/listTitleColor"
+                    android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_5">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证号："
+                android:textColor="@color/transparent_half"
+                android:textSize="@dimen/sp_15" />
+
+        <TextView
+                android:id="@+id/tvUID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="210*********1166018"
+                android:textColor="@color/listTitleColor"
+                android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_5">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人员职称："
+                android:textColor="@color/transparent_half"
+                android:textSize="@dimen/sp_15" />
+
+        <TextView
+                android:id="@+id/tvgTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 高级工程师"
+                android:textColor="@color/listTitleColor"
+                android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_5">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所在单位："
+                android:textColor="@color/transparent_half"
+                android:textSize="@dimen/sp_15" />
+
+        <TextView
+                android:id="@+id/tvcompan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="辽宁田阳工程技术咨询服务有限公司"
+                android:textColor="@color/listTitleColor"
+                android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效期至："
+                android:textColor="@color/transparent_half"
+                android:textSize="@dimen/sp_15" />
+
+        <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2022-02-03"
+                android:textColor="@color/listTitleColor"
+                android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/listBgCol" />
+</LinearLayout>

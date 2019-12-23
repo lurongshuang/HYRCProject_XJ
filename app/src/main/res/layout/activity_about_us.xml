@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listBgCol"
+        android:orientation="vertical"
+        tools:context="com.hyrc99.projectByL.activity.userCenter.aboutUs.AboutUsActivity">
+
+    <include layout="@layout/include_toolbar_layout_text" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_200"
+            android:background="@color/colorPrimary"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_splash_app_logo_xui" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="新疆水利APP V 1.0.0"
+                android:textColor="@color/fontColor"
+                android:textSize="@dimen/sp_15" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:lineHeight="@dimen/dp_20"
+                android:text="  主要用于新疆水利建设管理与管理工作。结合已有项目成果，实现与已有数据的互联互通，总体上能够通过手机调阅现有系统的数据，也能通过手机上传现有系统需要的相关数据，如工地的施工现场"
+                android:textColor="@color/picture_tab_color_false"
+                android:textSize="@dimen/sp_13" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dp_5"
+            android:gravity="bottom">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="ALL RIGHTS RESERVED"
+                android:textColor="@color/picture_tab_color_false"
+                android:textSize="@dimen/sp_13" />
+    </LinearLayout>
+</LinearLayout>

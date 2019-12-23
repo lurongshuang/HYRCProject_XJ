@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_151"
+        android:orientation="vertical">
+    <com.hyrc99.projectByL.utils.view.AppBanner
+            app:bb_isTitleShow="false"
+            app:bb_indicatorWidth="@dimen/dp_5"
+            app:bb_indicatorHeight="@dimen/dp_5"
+            app:bb_indicatorSelectColor="@color/colorPrimary"
+            android:id="@+id/sib_indicator_left_with_text"
+            android:layout_width="match_parent"
+            app:bb_indicatorGap="@dimen/dp_5"
+            android:layout_height="match_parent"
+            app:bb_delay="3"
+            app:bb_indicatorGravity="LEFT"
+            app:bb_period="8"
+            app:bb_scale="1"
+              />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/listBgCol"
+            />
+</LinearLayout>

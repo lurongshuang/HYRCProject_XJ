@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listBgCol"
+        tools:context="com.hyrc99.projectByL.activity.personSearch.PersonActivity">
+
+    <include layout="@layout/include_toolbar_layout_text" />
+    <!--列表-->
+
+    <LinearLayout
+            android:id="@+id/lltype1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <fragment
+                android:id="@+id/fgper"
+                class="com.hyrc99.projectByL.activity.personSearch.Fragment.PersonFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_72" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/lltype2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <fragment
+                android:id="@+id/fgperType"
+                class="com.hyrc99.projectByL.activity.personSearch.Fragment.PersonTypeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_72" />
+    </LinearLayout>
+
+    <!--筛选-->
+    <com.hyrc99.projectByL.utils.view.PersonScreenView
+            android:id="@+id/psView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_42" />
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/white" />
+
+    <LinearLayout
+            android:id="@+id/ll_legal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dp_5"
+            android:paddingBottom="@dimen/dp_5">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                    android:id="@+id/ll_left_queryPic"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_110"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_bg_type_1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                <ImageView
+                        android:layout_width="@dimen/dp_36"
+                        android:layout_height="@dimen/dp_36"
+                        android:src="@drawable/ic_faren" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_5"
+                        android:gravity="center_horizontal"
+                        android:text="法人项目"
+                        android:textColor="@color/color_333333"
+                        android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="@dimen/dp_2"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_110"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:id="@+id/ll_quality"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg_type_2"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    <ImageView
+                            android:layout_width="@dimen/dp_36"
+                            android:layout_height="@dimen/dp_36"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:src="@drawable/ic_checksetting_location" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/dp_10"
+                            android:gravity="center_vertical"
+                            android:text="考勤位置设置"
+                            android:textColor="@color/color_333333"
+                            android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_2"
+                        android:background="@color/white" />
+
+                <LinearLayout
+                        android:id="@+id/ll_query_check_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_bg_type_3"
+                        android:gravity="center_vertical"
+                        android:visibility="visible">
+
+                    <ImageView
+                            android:layout_width="@dimen/dp_36"
+                            android:layout_height="@dimen/dp_36"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:src="@drawable/ic_record" />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/dp_10"
+                            android:gravity="center_vertical"
+                            android:text="考勤记录"
+                            android:textColor="@color/color_333333"
+                            android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/listBgCol" />
+</LinearLayout>

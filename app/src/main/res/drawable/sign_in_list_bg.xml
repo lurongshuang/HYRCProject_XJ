@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <padding
+            android:bottom="@dimen/dp_5"
+            android:top="@dimen/dp_5" />
+    <corners android:radius="@dimen/dp_5" />
+    <gradient
+            android:angle="270"
+            android:startColor="@color/singinListColor"
+            android:endColor="@color/singinListLigtColor"
+            android:type="linear" />
+</shape>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listBgCol"
+        android:orientation="vertical"
+        tools:context="com.hyrc99.projectByL.activity.userCenter.informationModification.InformationMActivity">
+
+    <include layout="@layout/include_toolbar_layout_text" />
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+            android:id="@+id/rluserhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dp_10">
+
+        <TextView
+                style="@style/item_usercenterInfor"
+                android:text="头像" />
+
+        <com.xuexiang.xui.widget.imageview.RadiusImageView
+                android:id="@+id/riimage"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_30"
+                app:riv_is_oval="true" />
+
+        <ImageView style="@style/item_usercenterfanhui" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+            android:id="@+id/rlusernc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dp_10">
+
+        <TextView
+                style="@style/item_usercenterInfor"
+                android:text="昵称" />
+
+        <TextView
+                android:id="@+id/tvusernc"
+                style="@style/item_usercenter_name" />
+
+        <ImageView style="@style/item_usercenterfanhui" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+            android:id="@+id/rlusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dp_10">
+
+        <TextView
+                style="@style/item_usercenterInfor"
+                android:text="姓名" />
+
+        <TextView
+                android:id="@+id/tvname"
+                style="@style/item_usercenter_name" />
+
+        <ImageView style="@style/item_usercenterfanhui" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+            android:id="@+id/rlusersex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dp_10">
+
+        <TextView
+                style="@style/item_usercenterInfor"
+                android:text="性别" />
+
+        <TextView
+                android:id="@+id/tvusersex"
+                style="@style/item_usercenter_name" />
+
+        <ImageView style="@style/item_usercenterfanhui" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+            android:id="@+id/rluserphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dp_10">
+
+        <TextView
+                style="@style/item_usercenterInfor"
+                android:text="联系方式" />
+
+        <TextView
+                android:id="@+id/tvuserphone"
+                style="@style/item_usercenter_name" />
+
+        <ImageView style="@style/item_usercenterfanhui" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout
+            android:id="@+id/rlusercom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/dp_10">
+
+        <TextView
+                style="@style/item_usercenterInfor"
+                android:text="公司" />
+
+        <TextView
+                android:id="@+id/tvusercom"
+                style="@style/item_usercenter_name" />
+
+        <ImageView style="@style/item_usercenterfanhui" />
+    </com.xuexiang.xui.widget.alpha.XUIAlphaRelativeLayout>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<resources>
+    <color name="xui_config_color_light_blue">@color/colorPrimary</color>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="XUITheme.Phone">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <!--        <item name="xui_round_btn_bg_color">@color/colorPrimary</item>-->
+        <!--        <item name="xui_round_btn_border_color">@color/colorPrimary</item>-->
+        <!--        <item name="xui_config_color_background">@color/colorPrimary</item>-->
+        <!--        <item name="xui_config_color_stroke">@color/colorPrimary</item>-->
+    </style>
+
+    <!--窗体背景，这个背景能在第一时间显示, 避免启动时白屏，黑屏问题-->
+    <style name="XUITheme.Launch.Splash">
+        <!-- <item name="android:windowBackground">@drawable/xui_config_bg_splash</item>
+         <item name="xui_config_splash_app_logo">@drawable/ic_splash_app_logo_xui</item>
+         <item name="xui_config_splash_company_logo">@drawable/ic_splash_company_logo_xuexiang</item>-->
+        <item name="android:windowBackground">@drawable/splash_file</item>
+    </style>
+
+    <style name="MainTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/anim_fade</item>
+    </style>
+    <!--activity 淡入淡出-->
+    <style name="AnimActivity" parent="XUITheme.Launch">
+        <item name="android:windowAnimationStyle">@style/anim_fade</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="anim_fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_fade_out</item>
+    </style>
+
+    <style name="Button_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:layout_marginBottom">@dimen/dp_2</item>
+        <item name="android:layout_marginTop">@dimen/dp_2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+
+    </style>
+
+    <!--加载动画-->
+    <style name="TransparentDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0</item>
+    </style>
+
+    <style name="item_textView_margin" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/listTitleColor</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="item_imageView_margin" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">@dimen/dp_30</item>
+        <item name="android:layout_height">@dimen/dp_30</item>
+    </style>
+
+    <style name="item_title_bg" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/dp_15</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/dp_5</item>
+        <item name="android:paddingBottom">@dimen/dp_5</item>
+        <item name="android:textColor">@color/fontColor</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="item_textView_name" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/fontColor</item>
+    </style>
+
+    <style name="item_imageView_name" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">@dimen/dp_20</item>
+        <item name="android:layout_height">@dimen/dp_30</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+    </style>
+
+    <style name="login_LL" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/dp_30</item>
+        <item name="android:layout_marginLeft">@dimen/dp_15</item>
+        <item name="android:layout_marginRight">@dimen/dp_15</item>
+        <item name="android:background">@drawable/shape_logo_bg</item>
+    </style>
+
+    <style name="item_usercenterInfor" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@color/fontColor</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="item_usercenter_name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/edu_text_more_color</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/dp_30</item>
+    </style>
+
+    <style name="item_usercenterfanhui">
+        <item name="android:layout_width">@dimen/dp_20</item>
+        <item name="android:layout_height">@dimen/dp_20</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/iconjinru</item>
+    </style>
+
+    <style name="emphasize">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">@string/emphasize</item>
+        <item name="android:textColor">@color/emphasize</item>
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+</resources>
