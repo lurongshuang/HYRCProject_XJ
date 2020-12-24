@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.gyf.immersionbar:immersionbar:2.3.3-beta09@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eb195208e4a5afecf39ca674076b7fdb/jetified-immersionbar-2.3.3-beta09/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/eb195208e4a5afecf39ca674076b7fdb/jetified-immersionbar-2.3.3-beta09/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/134f6a15883e5b81c1e73553ab443153/jetified-immersionbar-2.3.3-beta09/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/134f6a15883e5b81c1e73553ab443153/jetified-immersionbar-2.3.3-beta09/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gyf.immersionbar/immersionbar/2.3.3-beta09/64f37c9300e50005ad977bfe8a002f5db3fce944/immersionbar-2.3.3-beta09-javadoc.jar!/" />

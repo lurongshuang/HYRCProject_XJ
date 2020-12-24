@@ -35,6 +35,7 @@ public class LeaveActivity extends BaseActivity {
     TextView tvaveEndTime;
     int leaveEndTime = -1; //请假结束时间
 
+
     @Override
     protected int loadView() {
         return R.layout.activity_leave;

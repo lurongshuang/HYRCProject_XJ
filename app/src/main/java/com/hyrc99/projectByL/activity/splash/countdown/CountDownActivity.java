@@ -39,6 +39,7 @@ public class CountDownActivity extends BaseActivity implements View.OnClickListe
             if (message.what == GOTOMESSAGE) {
                 if (timer != null) {
                     timer.cancel();
+                    timer = null;
                 }
             }
         }

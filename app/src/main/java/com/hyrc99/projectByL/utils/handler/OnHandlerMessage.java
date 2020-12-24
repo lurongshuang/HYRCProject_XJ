@@ -7,6 +7,10 @@ import android.os.Message;
  * @date: 2019/11/5
  * @author: 卢融霜
  */
-public interface OnHandlerMessage {
+public interface onHandlerMessage {
+    /**
+     * handler
+     * @param message
+     */
     public void handleMessage(Message message);
 }

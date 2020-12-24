@@ -8,7 +8,6 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.PersistableBundle;
-import android.text.BoringLayout;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.SpannedString;
@@ -54,7 +53,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     private myBroadCast myBroadCast;
 
     @Override
-
     public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState) {
         super.onSaveInstanceState(outState, outPersistentState);
     }
@@ -201,7 +199,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if (requestCode == 1) {
             for (int i = 0; i < permissions.length; i++) {
-                if (grantResults[i] == PERMISSION_GRANTED) {//选择了“始终允许”
+                //选择了“始终允许”
+                if (grantResults[i] == PERMISSION_GRANTED) {
                     if (i == permissions.length - 1) {
                         permissionCallBack.onSuccess();
                     }
@@ -213,6 +212,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                         //选择禁止
                         this.permissionCallBack.choiceProhibit();
                     }
+                    break;
                 }
             }
         }

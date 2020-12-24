@@ -45,6 +45,7 @@
                     android:text="男" />
 
             <RadioButton
+                    android:id="@+id/rbBoy"
                     style="@style/item_usercenterfanhui"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -63,6 +64,7 @@
                     android:text="女" />
 
             <RadioButton
+                    android:id="@+id/rbgrill"
                     style="@style/item_usercenterfanhui"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />

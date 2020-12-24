@@ -18,6 +18,7 @@ import com.hyrc99.projectByL.utils.photo.PhotoUtils;
 import com.hyrc99.projectByL.utils.view.FontIconView;
 
 import java.io.FileNotFoundException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,12 +45,13 @@ public class FeedBackActivity extends BaseActivity implements View.OnClickListen
         });
     }
 
-    List<Bitmap> imgList = new ArrayList<>();
+    List<Uri> imgList = new ArrayList<>();
+
     private void initGridlayout() {
         rlimages.removeAllViews();
         if (imgList != null && imgList.size() > 0) {
             for (int i = 0; i < imgList.size(); i++) {
-                rlimages.addView(getAddView(imgList.get(i), i));
+                rlimages.addView(getAddView(urlToBitmap(imgList.get(i)), i));
             }
         }
         if (imgList != null && imgList.size() < 4) {
@@ -87,15 +89,11 @@ public class FeedBackActivity extends BaseActivity implements View.OnClickListen
             ImageView ivimage = view.findViewById(R.id.ivimage);
             if (ivimage != null) {
                 ivimage.setImageBitmap(bitmap);
+                ivimage.setTag(index);
                 ivimage.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-//                        PreviewBuilder.from(FeedBackActivity.this)
-//                                .setImg(bitmap)
-//                                .setCurrentIndex(0) //当前预览的索引
-//                                .setSingleFling(true)
-//                                .setType(PreviewBuilder.IndicatorType.Number) //指示器为数字
-//                                .start();
+                      ImageBuilder.from(FeedBackActivity.this).setImage(imgList).start();
                     }
                 });
             }
@@ -134,17 +132,29 @@ public class FeedBackActivity extends BaseActivity implements View.OnClickListen
                 }
                 filtUri = data.getData();
                 Bitmap bitmap = null;
+                String bit = null;
                 try {
                     bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(filtUri));
+                    bit = filtUri.toString();
+
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
-                imgList.add(bitmap);
+                imgList.add(filtUri);
                 initGridlayout();
                 break;
         }
     }
 
+    private Bitmap urlToBitmap(Uri filtUri) {
+        Bitmap bitmap = null;
+        try {
+            bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(filtUri));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        return bitmap;
+    }
 
     @Override
     protected void clearData() {

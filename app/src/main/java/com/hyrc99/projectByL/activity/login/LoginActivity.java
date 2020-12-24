@@ -6,6 +6,7 @@ import android.widget.EditText;
 
 import com.hyrc99.projectByL.HYRCProject_Smaple.R;
 import com.hyrc99.projectByL.activity.main.MainActivity;
+import com.hyrc99.projectByL.activity.register.RegisterActivity;
 import com.hyrc99.projectByL.baseAll.BaseActivity;
 import com.xuexiang.xui.widget.edittext.ClearEditText;
 
@@ -30,9 +31,10 @@ public class LoginActivity extends BaseActivity {
         setTitle(false, "", null, null, "注册", new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                openAcitivty(RegisterActivity.class);
             }
         });
+        showKeyboard(etLoginIdnum);
     }
 
     @Override

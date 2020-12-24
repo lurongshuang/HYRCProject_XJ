@@ -25,6 +25,6 @@ public class SplashActivity extends BaseSplashActivity {
 
     @Override
     protected long getSplashDurationMillis() {
-        return 200l;
+        return 200L;
     }
 }

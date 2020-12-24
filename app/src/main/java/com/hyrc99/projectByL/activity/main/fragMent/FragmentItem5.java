@@ -1,5 +1,6 @@
 package com.hyrc99.projectByL.activity.main.fragMent;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,9 @@ import com.hyrc99.projectByL.activity.userCenter.setUp.SetUpActivity;
 import com.hyrc99.projectByL.baseAll.BaseActivity;
 import com.hyrc99.projectByL.baseAll.LazyLoadingFragment;
 import com.xuexiang.xui.widget.imageview.RadiusImageView;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -64,7 +68,25 @@ public class FragmentItem5 extends LazyLoadingFragment {
     }
 
     @Override
+    public void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
+    }
+
+    final int headCode = 200;
+
+    @Subscribe
+    public void headChange(HeaddMessage headMessage) {
+        switch (headMessage.getId()) {
+            case headCode:
+                ivriimage.setImageBitmap(headMessage.getBitmap());
+                break;
+        }
+    }
+
+    @Override
     protected void init(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        EventBus.getDefault().register(this);
     }
 
     @OnClick({R.id.ivriimage, R.id.lltvUser, R.id.llhelp, R.id.llcallback, R.id.llabout, R.id.llseting})
@@ -94,6 +116,32 @@ public class FragmentItem5 extends LazyLoadingFragment {
                 //设置
                 openActivity(SetUpActivity.class);
                 break;
+        }
+    }
+
+    public static class HeaddMessage {
+        private int id;
+        private Bitmap bitmap;
+
+        public HeaddMessage(int id, Bitmap bitmap) {
+            setId(id);
+            setBitmap(bitmap);
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public Bitmap getBitmap() {
+            return bitmap;
+        }
+
+        public void setBitmap(Bitmap bitmap) {
+            this.bitmap = bitmap;
         }
     }
 }

@@ -1,14 +1,20 @@
 package com.hyrc99.projectByL.activity.userCenter.informationModification;
 
 import butterknife.BindView;
+import butterknife.OnCheckedChanged;
+import butterknife.OnClick;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
 
 import com.hyrc99.projectByL.HYRCProject_Smaple.R;
 import com.hyrc99.projectByL.baseAll.BaseActivity;
+
+import org.greenrobot.eventbus.EventBus;
 
 public class ChangeUserActivity extends BaseActivity {
     @BindView(R.id.ettext)
@@ -17,10 +23,28 @@ public class ChangeUserActivity extends BaseActivity {
     LinearLayout llsex;
     @BindView(R.id.lluser)
     LinearLayout lluser;
+    @BindView(R.id.rbgrill)
+    RadioButton rbgrill;
+    @BindView(R.id.rbBoy)
+    RadioButton rbBoy;
+    boolean isSex = true;//男 else 女
 
     @Override
     protected int loadView() {
         return R.layout.activity_change_user;
+    }
+
+
+    private void isBoy(boolean state) {
+        if (state) {
+            rbgrill.setChecked(false);
+            rbBoy.setChecked(true);
+            isSex = true;
+        } else {
+            rbBoy.setChecked(false);
+            rbgrill.setChecked(true);
+            isSex = false;
+        }
     }
 
     @Override
@@ -31,44 +55,49 @@ public class ChangeUserActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 loadBaseDialog.show();
-                //修改
-                switch (key) {
-                    case 1:
-                        //昵称
-                        break;
+                if (key == 3) {
+                    EventBus.getDefault().post(new InformationMActivity.UserMessage(key, isSex ? "男" : "女"));
+
+                } else {
+                    EventBus.getDefault().post(new InformationMActivity.UserMessage(key, ettext.getText().toString()));
                 }
                 loadBaseDialog.dismiss();
                 showToast("保存成功");
                 ChangeUserActivity.this.finish();
             }
         });
-
-        switch (key) {
-            case 1:
-                //昵称
-                ettext.setText("昵称");
-                break;
-            case 2:
-                //姓名
-                ettext.setText("姓名");
-                break;
-            case 3:
-                //性别
-                lluser.setVisibility(View.GONE);
-                llsex.setVisibility(View.VISIBLE);
-                break;
-            case 4:
-                //联系方式
-                ettext.setText("联系方式");
-                break;
-            case 5:
-                //公司
-                ettext.setText("公司");
-                break;
-        }
-        if (key != 3) {
+        if (key == 3) {
+            lluser.setVisibility(View.GONE);
+            llsex.setVisibility(View.VISIBLE);
+            if (bundle.getString("name").equals("男")) {
+                isBoy(true);
+            } else {
+                isBoy(false);
+            }
+        } else {
+            ettext.setText(bundle.getString("name"));
             showKeyboard(ettext);
         }
+        rbgrill.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    isBoy(false);
+                } else {
+                    isBoy(true);
+                }
+            }
+        });
+        rbBoy.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    isBoy(true);
+                } else {
+                    isBoy(false);
+                }
+            }
+        });
     }
 
     @Override

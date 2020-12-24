@@ -23,13 +23,27 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name="com.hyrc99.projectByL.activity.work.leave.LeaveActivity"></activity>
+        <activity android:name="com.hyrc99.projectByL.utils.photo.SwitchActivity"
+                android:theme="@android:style/Animation.Dialog"
+                ></activity>
+        <activity android:name="com.hyrc99.projectByL.activity.userCenter.feedBack.ImageActivity" />
+        <activity android:name="com.hyrc99.projectByL.activity.register.PhoneCodeActivity" />
+        <activity android:name="com.hyrc99.projectByL.activity.register.RegisterActivity" />
+        <activity android:name="com.hyrc99.projectByL.activity.work.leave.LeaveActivity" />
         <activity android:name="com.hyrc99.projectByL.activity.changePassWord.SetNewPwdActivity" />
         <activity android:name="com.hyrc99.projectByL.activity.changePassWord.ChangePwdActivity" />
         <activity android:name="com.hyrc99.projectByL.activity.userCenter.informationModification.ChangeUserActivity" />
         <activity android:name="com.hyrc99.projectByL.activity.userCenter.setUp.SetUpActivity" />
         <activity android:name="com.hyrc99.projectByL.activity.userCenter.aboutUs.AboutUsActivity" />
-        <activity android:name="com.hyrc99.projectByL.activity.userCenter.feedBack.FeedBackActivity" />
+        <activity android:name="com.hyrc99.projectByL.activity.userCenter.feedBack.FeedBackActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
         <activity android:name="com.hyrc99.projectByL.activity.userCenter.help.HelpActivity" />
         <activity android:name="com.hyrc99.projectByL.activity.userCenter.informationModification.InformationMActivity" />
 

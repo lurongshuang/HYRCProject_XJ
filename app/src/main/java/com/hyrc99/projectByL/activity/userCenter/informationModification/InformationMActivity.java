@@ -13,11 +13,15 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.hyrc99.projectByL.HYRCProject_Smaple.R;
+import com.hyrc99.projectByL.activity.main.fragMent.FragmentItem5;
 import com.hyrc99.projectByL.baseAll.BaseActivity;
 import com.hyrc99.projectByL.utils.photo.FileProviderUtils;
 import com.hyrc99.projectByL.utils.photo.PhotoUtils;
 import com.hyrc99.projectByL.utils.view.FontIconView;
 import com.xuexiang.xui.widget.imageview.RadiusImageView;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 
 import java.io.File;
 
@@ -75,11 +79,33 @@ public class InformationMActivity extends BaseActivity {
         tvusersex.setText("男");
         tvuserphone.setText("13718382321");
         tvusercom.setText("北京科技科技有限公司");
+        EventBus.getDefault().register(this);
     }
 
     @Override
     protected void clearData() {
+        EventBus.getDefault().unregister(this);
+    }
 
+    @Subscribe
+    public void EventMessage(UserMessage userMessage) {
+        switch (userMessage.getKey()) {
+            case 1:
+                tvusernc.setText(userMessage.getValue());
+                break;
+            case 2:
+                tvname.setText(userMessage.getValue());
+                break;
+            case 3:
+                tvusersex.setText(userMessage.getValue());
+                break;
+            case 4:
+                tvuserphone.setText(userMessage.getValue());
+                break;
+            case 5:
+                tvusercom.setText(userMessage.getValue());
+                break;
+        }
     }
 
     @OnClick({R.id.rluserhead, R.id.rlusernc, R.id.rlusername, R.id.rlusersex, R.id.rluserphone, R.id.rlusercom})
@@ -92,31 +118,31 @@ public class InformationMActivity extends BaseActivity {
                 break;
             case R.id.rlusernc:
                 //昵称
-                bundle.putString("name", "昵称");
+                bundle.putString("name", tvusernc.getText().toString());
                 bundle.putInt("key", 1);
                 openAcitivty(ChangeUserActivity.class, bundle);
                 break;
             case R.id.rlusername:
                 //姓名
-                bundle.putString("name", "姓名");
+                bundle.putString("name", tvname.getText().toString());
                 bundle.putInt("key", 2);
                 openAcitivty(ChangeUserActivity.class, bundle);
                 break;
             case R.id.rlusersex:
                 //性别
-                bundle.putString("name", "性别");
+                bundle.putString("name", tvusersex.getText().toString());
                 bundle.putInt("key", 3);
                 openAcitivty(ChangeUserActivity.class, bundle);
                 break;
             case R.id.rluserphone:
                 //联系方式
-                bundle.putString("name", "联系方式");
+                bundle.putString("name", tvuserphone.getText().toString());
                 bundle.putInt("key", 4);
                 openAcitivty(ChangeUserActivity.class, bundle);
                 break;
             case R.id.rlusercom:
                 //公司
-                bundle.putString("name", "公司");
+                bundle.putString("name", tvusercom.getText().toString());
                 bundle.putInt("key", 5);
                 openAcitivty(ChangeUserActivity.class, bundle);
                 break;
@@ -188,10 +214,37 @@ public class InformationMActivity extends BaseActivity {
                     uri = Uri.fromFile(outputFile);
                     Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(uri));
                     riimage.setImageBitmap(bitmap);
+                    EventBus.getDefault().post(new FragmentItem5.HeaddMessage(200, bitmap));
                 } catch (Exception ex) {
                     ex.printStackTrace();
                 }
                 break;
+        }
+    }
+
+    public static class UserMessage {
+        private int key;
+        private String value;
+
+        public UserMessage(int key, String value) {
+            setKey(key);
+            setValue(value);
+        }
+
+        public int getKey() {
+            return key;
+        }
+
+        public void setKey(int key) {
+            this.key = key;
+        }
+
+        public String getValue() {
+            return value;
+        }
+
+        public void setValue(String value) {
+            this.value = value;
         }
     }
 }

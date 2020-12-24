@@ -26,7 +26,7 @@ public class VibratorUtils {
      */
     public void setVibratorOnly(Context context,int milli) {
         if (vibrator == null) {
-            vibrator = (Vibrator) context.getSystemService(context.VIBRATOR_SERVICE);
+            vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         }
         vibrator.vibrate(milli);
     }

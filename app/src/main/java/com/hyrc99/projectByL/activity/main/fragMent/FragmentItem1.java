@@ -24,7 +24,6 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.indicators.Li
 import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.SimplePagerTitleView;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import androidx.fragment.app.Fragment;
@@ -107,7 +106,8 @@ public class FragmentItem1 extends LazyLoadingFragment {
             @Override
             public IPagerTitleView getTitleView(Context context, final int index) {
                 SimplePagerTitleView simplePagerTitleView = new SimplePagerTitleView(context);
-                simplePagerTitleView.setTextSize(15);
+                int TextSize = getResources().getDimensionPixelSize(R.dimen.sp_4);
+                simplePagerTitleView.setTextSize(TextSize);
                 simplePagerTitleView.setText(titles[index]);
                 simplePagerTitleView.setAlpha(1.0f);
                 simplePagerTitleView.setNormalColor(getResources().getColor(R.color.black));

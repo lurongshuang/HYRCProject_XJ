@@ -10,7 +10,7 @@ import android.os.Message;
  * @author: 卢融霜
  */
 public class HandlerUtils {
-    public static Handler getHandler(OnHandlerMessage message) {
+    public static Handler getHandler(onHandlerMessage message) {
         Handler handler = new Handler() {
             @Override
             public void handleMessage(Message message1) {
